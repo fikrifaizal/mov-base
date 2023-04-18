@@ -7,9 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.sinau.movbase.core.data.Resource
-import com.sinau.movbase.core.ui.MovieAdapter
+import androidx.recyclerview.widget.GridLayoutManager
+import com.sinau.core.ui.MovieAdapter
 import com.sinau.movbase.databinding.FragmentMovieBinding
 import com.sinau.movbase.view.detail.DetailActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -54,21 +53,27 @@ class HomeFragment : Fragment() {
 
         homeViewModel.movies.observe(viewLifecycleOwner) { movie ->
             if (movie != null) {
-                when(movie) {
-                    is Resource.Loading -> binding?.loadingLayout?.visibility = View.VISIBLE
-                    is Resource.Success -> {
+                when (movie) {
+                    is com.sinau.core.data.Resource.Loading -> {
+                        binding?.rvMovie?.visibility = View.GONE
+                        binding?.loadingLayout?.visibility = View.VISIBLE
+                    }
+                    is com.sinau.core.data.Resource.Success -> {
+                        binding?.rvMovie?.visibility = View.VISIBLE
                         binding?.loadingLayout?.visibility = View.GONE
                         movieAdapter.setData(movie.data)
                     }
-                    is Resource.Error -> {
+                    is com.sinau.core.data.Resource.Error -> {
+                        binding?.rvMovie?.visibility = View.GONE
                         binding?.loadingLayout?.visibility = View.GONE
+                        binding?.tvError?.visibility = View.VISIBLE
                     }
                 }
             }
         }
 
         with(binding?.rvMovie) {
-            this?.layoutManager = LinearLayoutManager(activity)
+            this?.layoutManager = GridLayoutManager(activity, 2)
             this?.setHasFixedSize(true)
             this?.adapter = movieAdapter
         }

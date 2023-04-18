@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  TextView  -->
+    <style name="TextStyle" parent="Widget.MaterialComponents.TextView" />
+
+    <style name="TextStyle.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Gray">
+        <item name="android:textColor">@color/gray_700</item>
+    </style>
+
+    <style name="TextStyle.Black.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextStyle.Gray.Regular">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

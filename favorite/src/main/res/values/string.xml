@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  empty data  -->
+    <string name="empty_dialog">Nothing here\nDon\'t forget to add your favorite movie</string>
+</resources>

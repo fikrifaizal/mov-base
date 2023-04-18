@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.MovBase" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/blue_900</item>
+        <item name="colorPrimaryVariant">@color/indigo_900</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Secondary brand color. -->
@@ -19,30 +19,62 @@
 
 
     <!--  TextView  -->
-    <style name="TextBlack" parent="Widget.MaterialComponents.TextView">
+    <style name="TextStyle" parent="Widget.MaterialComponents.TextView" />
+
+    <style name="TextStyle.Black">
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="TextBlack.Large">
-        <item name="android:textSize">28sp</item>
+    <style name="TextStyle.Gray">
+        <item name="android:textColor">@color/gray_700</item>
     </style>
 
-    <style name="TextBlack.ExtraMedium">
-        <item name="android:textSize">21sp</item>
+    <style name="TextStyle.Black.Large">
+        <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="TextBlack.Medium">
+    <style name="TextStyle.Black.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextStyle.Black.Regular">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="TextBlack.Small">
-        <item name="android:textSize">12sp</item>
+    <style name="TextStyle.Gray.Regular">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--  splashscreen  -->
+    <style name="SplashscreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:background">@color/blue_900</item>
+    </style>
+
+    <!--  button  -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ButtonStyle.Transparent">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonStyle.Transparent.Favorite">
+        <item name="android:drawableStart">@drawable/ic_file_add_24</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <style name="ButtonStyle.Transparent.Share">
+        <item name="android:drawableStart">@drawable/ic_paper_plane_24</item>
+        <item name="android:drawablePadding">4dp</item>
     </style>
 
     <!--  ProgressBar  -->
     <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:indeterminateTint">@color/teal_200</item>
+        <item name="android:indeterminateTint">@color/yellow_900</item>
     </style>
 </resources>

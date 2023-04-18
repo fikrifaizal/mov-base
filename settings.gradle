@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Mov Base"
 include ':app'
+include ':core'
+include ':favorite'

@@ -17,62 +17,108 @@
             android:id="@+id/detail_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:padding="16dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_poster"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="4dp"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="1dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/iv_poster"
-                    android:layout_width="100dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
                     android:contentDescription="@string/image_desc"
-                    tools:ignore="ImageContrastCheck"
+                    android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/tv_title"
-                style="@style/TextBlack.Large"
-                android:layout_width="wrap_content"
+                style="@style/TextStyle.Black.Large"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cv_poster"
                 app:layout_constraintTop_toTopOf="@+id/cv_poster"
                 tools:text="@string/dummy_title" />
 
             <TextView
-                android:id="@+id/overview_title"
-                style="@style/TextBlack.Medium"
+                android:id="@+id/tv_date"
+                style="@style/TextStyle.Gray.Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                tools:text="@string/dummy_date" />
+
+            <RatingBar
+                android:id="@+id/rb_rate"
+                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/overview"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/tv_overview"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/gray_700"
+                android:progressTint="@color/yellow_A700"
+                android:rating="3.9"
+                android:secondaryProgressTint="@color/gray_700"
+                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                style="@style/TextStyle.Gray.Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/rb_rate"
+                app:layout_constraintEnd_toEndOf="@+id/tv_date"
+                app:layout_constraintStart_toEndOf="@+id/rb_rate"
+                app:layout_constraintTop_toTopOf="@+id/rb_rate"
+                tools:text="@string/dummy_rating" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_favorite"
+                style="@style/ButtonStyle.Transparent.Favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/favorite"
+                app:layout_constraintEnd_toStartOf="@id/btn_share"
+                app:layout_constraintStart_toStartOf="@+id/cv_poster"
                 app:layout_constraintTop_toBottomOf="@+id/cv_poster" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_share"
+                style="@style/ButtonStyle.Transparent.Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title"
+                app:layout_constraintStart_toEndOf="@+id/btn_favorite"
+                app:layout_constraintTop_toTopOf="@+id/btn_favorite" />
 
             <TextView
                 android:id="@+id/tv_overview"
-                style="@style/TextBlack.Medium"
+                style="@style/TextStyle.Black.Medium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/overview_title"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title"
+                app:layout_constraintStart_toStartOf="@+id/cv_poster"
+                app:layout_constraintTop_toBottomOf="@+id/btn_favorite"
                 tools:text="@string/dummy_overview" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
