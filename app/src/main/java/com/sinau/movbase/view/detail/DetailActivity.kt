@@ -9,7 +9,7 @@ import com.sinau.core.domain.model.Movie
 import com.sinau.movbase.R
 import com.sinau.movbase.databinding.ActivityDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
-import com.sinau.movbase.BuildConfig as BC
+import com.sinau.movbase.BuildConfig
 
 @AndroidEntryPoint
 class DetailActivity : AppCompatActivity() {
@@ -36,7 +36,7 @@ class DetailActivity : AppCompatActivity() {
         movie?.let {
             binding.apply {
                 Glide.with(this@DetailActivity)
-                    .load(BC.POSTER_URL + movie.posterPath)
+                    .load(BuildConfig.POSTER_URL + movie.posterPath)
                     .centerCrop()
                     .into(ivPoster)
                 tvTitle.text = movie.title
