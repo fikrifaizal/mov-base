@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Electric Eel | 2022.1.1 Patch 1">
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\sinau\core\ui\MovieAdapter.kt"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 24. Merge all the resources in this folder into `drawable`.">
+        <location
+            file="src\main\res\drawable-v24"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1232 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\ic_file_checkmark_24.xml"
+            line="11"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (8713 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="11"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1322 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1441 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="49"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1375 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1430 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="121"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1162 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="201"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1748 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="477"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1251 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="575"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1270 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="578"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1184 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="592"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1184 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="595"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1551 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="602"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1371 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="609"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1531 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="616"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1290 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="623"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1802 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="646"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (2936 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="746"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1036 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="771"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (4764 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="836"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (2630 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\illus_error_200.xml"
+            line="841"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.purple_500` appears to be unused">
+        <location
+            file="..\app\src\main\res\values\colors.xml"
+            line="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.activity_horizontal_margin` appears to be unused">
+        <location
+            file="..\app\src\main\res\values\dimens.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.activity_vertical_margin` appears to be unused">
+        <location
+            file="..\app\src\main\res\values\dimens.xml"
+            line="4"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher` appears to be unused">
+        <location
+            file="..\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml"
+            line="2"/>
+        <location
+            file="..\app\src\main\res\mipmap-anydpi-v33\ic_launcher.xml"
+            line="2"/>
+        <location
+            file="..\app\src\main\res\mipmap-hdpi\ic_launcher.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-mdpi\ic_launcher.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xhdpi\ic_launcher.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xxhdpi\ic_launcher.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xxxhdpi\ic_launcher.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused">
+        <location
+            file="..\app\src\main\res\drawable\ic_launcher_background.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_foreground` appears to be unused">
+        <location
+            file="..\app\src\main\res\drawable-v24\ic_launcher_foreground.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher_round` appears to be unused">
+        <location
+            file="..\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml"
+            line="2"/>
+        <location
+            file="..\app\src\main\res\mipmap-hdpi\ic_launcher_round.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-mdpi\ic_launcher_round.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xhdpi\ic_launcher_round.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.webp"/>
+        <location
+            file="..\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_notifications_black_24dp` appears to be unused">
+        <location
+            file="..\app\src\main\res\drawable\ic_notifications_black_24dp.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/illus_logo_black.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\illus_logo_black.png"/>
+    </issue>
+
+</issues>
