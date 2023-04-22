@@ -6,10 +6,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.sinau.core.domain.model.Movie
+import com.sinau.movbase.BuildConfig
 import com.sinau.movbase.R
 import com.sinau.movbase.databinding.ActivityDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
-import com.sinau.movbase.BuildConfig
 
 @AndroidEntryPoint
 class DetailActivity : AppCompatActivity() {
